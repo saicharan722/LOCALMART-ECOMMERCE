@@ -1,0 +1,396 @@
+/*====================================
+        Merchant Login CSS
+======================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    background:#eef7f1;
+
+    overflow-x:hidden;
+
+}
+
+/*==========================
+      Left Panel
+===========================*/
+
+.left-panel{
+
+    position:relative;
+    overflow:hidden;
+    background:
+        radial-gradient(ellipse at 18% 18%, rgba(20,169,74,.12), transparent 42%),
+        linear-gradient(145deg, #f3faf5 0%, #e8f5ec 100%);
+
+}
+
+.overlay{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:clamp(28px, 4vw, 64px);
+
+}
+
+.content{
+
+    width:min(100%, 760px);
+    margin:auto;
+    color:#183a26;
+    text-align:left;
+
+}
+
+.content h1{
+
+    margin:16px 0 12px;
+    color:#000;
+    font-size:clamp(2.25rem, 3.4vw, 3.6rem);
+    font-weight:800;
+    line-height:1.08;
+
+}
+
+.content p{
+
+    max-width:32rem;
+    margin:0;
+    color:#5c7063;
+    font-size:clamp(1rem, 1.25vw, 1.125rem);
+    line-height:1.7;
+
+}
+
+.content img{
+
+    display:block;
+    width:100%;
+    max-height:min(56vh, 520px);
+    object-fit:contain;
+    margin:24px auto 0;
+
+}
+
+.merchant-hero-eyebrow{
+
+    display:inline-flex;
+    align-items:center;
+    padding:8px 13px;
+    border:1px solid #d5eadb;
+    border-radius:999px;
+    background:rgba(255,255,255,.72);
+    color:#16713a;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:1px;
+
+}
+
+/*==========================
+     Glass Card
+===========================*/
+
+.login-box{
+
+    width:100%;
+
+    max-width:470px;
+
+    padding:40px;
+
+    border-radius:25px;
+
+    background:rgba(255,255,255,.25);
+
+    backdrop-filter:blur(20px);
+
+    -webkit-backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.35);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+
+    transition:.4s;
+
+}
+
+.login-box:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 25px 55px rgba(0,0,0,.20);
+
+}
+
+/*==========================
+        Headings
+===========================*/
+
+.login-box h2{
+
+    font-weight:700;
+
+    color:#198754;
+
+}
+
+.login-box p{
+
+    color:#6c757d;
+
+}
+
+/*==========================
+        Tabs
+===========================*/
+
+.nav-pills{
+
+    background:#f8f9fa;
+
+    padding:6px;
+
+    border-radius:50px;
+
+}
+
+.nav-pills .nav-link{
+
+    border-radius:50px;
+
+    color:#198754;
+
+    font-weight:600;
+
+}
+
+.nav-pills .nav-link.active{
+
+    background:#198754;
+
+    color:#fff;
+
+}
+
+/*==========================
+      Form Controls
+===========================*/
+
+.form-control{
+
+    height:50px;
+
+    border-radius:12px;
+
+}
+
+.form-control:focus{
+
+    border-color:#198754;
+
+    box-shadow:0 0 12px rgba(25,135,84,.25);
+
+}
+
+/* Input Icons */
+
+.input-group-text{
+
+    background:#198754;
+
+    color:#fff;
+
+    border:none;
+
+}
+
+/*==========================
+       Buttons
+===========================*/
+
+.btn-success{
+
+    height:52px;
+
+    border-radius:12px;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-success:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 10px 25px rgba(25,135,84,.35);
+
+}
+
+.btn-outline-success{
+
+    border-radius:30px;
+
+}
+
+/*==========================
+        Divider
+===========================*/
+
+.divider{
+
+    text-align:center;
+
+    margin:25px 0;
+
+    position:relative;
+
+}
+
+.divider::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:50%;
+
+    left:0;
+
+    width:40%;
+
+    height:1px;
+
+    background:#ccc;
+
+}
+
+.divider::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:50%;
+
+    right:0;
+
+    width:40%;
+
+    height:1px;
+
+    background:#ccc;
+
+}
+
+.divider span{
+
+    background:#fff;
+
+    padding:0 15px;
+
+    color:#888;
+
+}
+
+/*==========================
+       Links
+===========================*/
+
+a{
+
+    text-decoration:none;
+
+}
+
+a:hover{
+
+    color:#146c43 !important;
+
+}
+
+/*==========================
+      Animation
+===========================*/
+
+.login-box{
+
+    animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*==========================
+      Responsive
+===========================*/
+
+@media(max-width:991px){
+
+.left-panel{
+
+display:none;
+
+}
+
+.login-box{
+
+margin:25px;
+
+max-width:100%;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.login-box{
+
+padding:25px;
+
+}
+
+.content h1{
+
+font-size:34px;
+
+}
+
+}

@@ -1,0 +1,179 @@
+<style>
+    .lm-landing-footer {
+        background: #17241b;
+        color: #c9d2cc;
+        padding: 3.5rem 20px 1.5rem;
+    }
+
+    .lm-landing-footer__container {
+        max-width: 1320px;
+        margin: 0 auto;
+    }
+
+    .lm-landing-footer__grid {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1fr 1fr 1.5fr;
+        gap: 30px;
+    }
+
+    .lm-landing-footer h2,
+    .lm-landing-footer h3 {
+        margin: 0 0 1.1rem;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .lm-landing-footer__brand-title {
+        font-size: 1.25rem !important;
+    }
+
+    .lm-landing-footer p,
+    .lm-landing-footer a {
+        color: #c9d2cc;
+        font-size: .92rem;
+        line-height: 1.7;
+    }
+
+    .lm-landing-footer p {
+        margin: 0 0 .75rem;
+    }
+
+    .lm-landing-footer__links {
+        display: grid;
+        gap: .55rem;
+    }
+
+    .lm-landing-footer a {
+        text-decoration: none;
+    }
+
+    .lm-landing-footer__links a:hover,
+    .lm-landing-footer__contact a:hover {
+        color: #ffc107;
+    }
+
+    .lm-landing-footer__socials {
+        display: flex;
+        gap: .7rem;
+        margin-top: 1rem;
+    }
+
+    .lm-landing-footer__socials a {
+        display: grid;
+        width: 36px;
+        height: 36px;
+        place-items: center;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, .08);
+        color: #fff;
+        font-weight: 700;
+        transition: background-color .2s ease;
+    }
+
+    .lm-landing-footer__socials a:hover {
+        background: #00a651;
+        color: #fff;
+    }
+
+    .lm-landing-footer__divider {
+        margin: 2rem 0 1.2rem;
+        border-color: rgba(255, 255, 255, .12);
+        opacity: 1;
+    }
+
+    .lm-landing-footer__bottom {
+        margin: 0;
+        padding-top: 1rem;
+        border-top: 1px solid rgba(255, 255, 255, .12);
+        text-align: center;
+    }
+
+    @media (max-width: 900px) {
+        .lm-landing-footer__grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+    }
+
+    @media (max-width: 540px) {
+        .lm-landing-footer {
+            padding-right: 16px;
+            padding-left: 16px;
+        }
+
+        .lm-landing-footer__grid {
+            grid-template-columns: 1fr;
+            gap: 24px;
+        }
+    }
+</style>
+
+<footer class="lm-landing-footer">
+    <div class="lm-landing-footer__container">
+        <div class="lm-landing-footer__grid">
+            <section>
+                <h2 class="lm-landing-footer__brand-title">
+                    <i class="bi bi-shop" aria-hidden="true"></i>
+                    LocalMart
+                </h2>
+                <p>
+                    LocalMart is your one-stop online marketplace for groceries, food, electronics, fashion,
+                    stationery, home appliances, and local businesses. Shop smarter with trusted sellers and fast delivery.
+                </p>
+                <div class="lm-landing-footer__socials" aria-label="Social media">
+                    <a href="#" aria-label="Facebook">f</a>
+                    <a href="#" aria-label="Instagram">◎</a>
+                    <a href="#" aria-label="X">𝕏</a>
+                    <a href="#" aria-label="YouTube">▶</a>
+                    <a href="#" aria-label="LinkedIn">in</a>
+                </div>
+            </section>
+
+            <section>
+                <h3>Shop Categories</h3>
+                <nav class="lm-landing-footer__links" aria-label="Shop categories">
+                    <a href="{% url 'food' %}">Food</a>
+                    <a href="{% url 'grocery' %}">Grocery</a>
+                    <a href="{% url 'fashion' %}">Fashion</a>
+                    <a href="{% url 'stationery' %}">Stationery</a>
+                    <a href="{% url 'electronics_home' %}">Electronics</a>
+                    <a href="{% url 'home_appliances' %}">Home Appliances</a>
+                </nav>
+            </section>
+
+            <section>
+                <h3>Customer Service</h3>
+                <nav class="lm-landing-footer__links" aria-label="Customer service">
+                    <a href="{% url 'my_orders' %}">Track Orders</a>
+                    <a href="mailto:support@localmart.com">Help Center</a>
+                    <a href="mailto:support@localmart.com">Returns</a>
+                    <a href="mailto:support@localmart.com">Refund Policy</a>
+                    <a href="mailto:support@localmart.com">Shipping Policy</a>
+                    <a href="mailto:support@localmart.com">Cancellation</a>
+                    <a href="mailto:support@localmart.com">FAQs</a>
+                </nav>
+            </section>
+
+            <section>
+                <h3>Company</h3>
+                <nav class="lm-landing-footer__links" aria-label="Company">
+                    <a href="{% url 'index' %}">About Us</a>
+                    <a href="mailto:support@localmart.com">Blog</a>
+                    <a href="mailto:support@localmart.com">Contact Us</a>
+                </nav>
+            </section>
+
+            <section class="lm-landing-footer__contact">
+                <h3>Contact</h3>
+                <p><i class="bi bi-geo-alt-fill text-warning" aria-hidden="true"></i> Hyderabad, Telangana, India</p>
+                <p><a href="mailto:support@localmart.com">support@localmart.com</a></p>
+                <p><a href="tel:+919876543210">+91 98765 43210</a></p>
+                <p>Mon – Sun: 8:00 AM – 10:00 PM</p>
+            </section>
+        </div>
+
+        <hr class="lm-landing-footer__divider">
+        <p class="lm-landing-footer__bottom">© {% now "Y" %} LocalMart. All Rights Reserved.</p>
+    </div>
+</footer>
+{% include "partials/form-validation-script.html" %}

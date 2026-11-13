@@ -1,0 +1,37 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Delivery management | LocalMart</title>
+    <link rel="stylesheet" href="{% static 'css/order-tracking.css' %}?v=merchant-delivery-layout-1">
+    <link rel="stylesheet" href="{% static 'css/merchant-deliveries.css' %}?v=merchant-delivery-layout-1">
+</head>
+<body class="merchant-deliveries-page">
+    <header class="track-header">
+        <a class="brand" href="/">Local<span>Mart</span></a>
+        <div class="track-page-title">Merchant delivery management</div>
+        <a class="back-link" href="/merchant/dashboard/">Dashboard</a>
+    </header>
+    <main class="partner-shell">
+        <section class="partner-intro" aria-labelledby="deliveryPageTitle">
+            <div>
+                <span class="eyebrow">{{ merchant.shop_name }}</span>
+                <h1 id="deliveryPageTitle">Active deliveries</h1>
+                <p>Assign an available delivery partner and follow order status.</p>
+            </div>
+            <div class="delivery-live-status">
+                <span aria-hidden="true"></span>
+                Live updates every 15 seconds
+            </div>
+        </section>
+        <div id="merchantDeliveries" class="partner-orders" aria-live="polite" aria-busy="true">
+            <article class="delivery-empty-state">Loading deliveries...</article>
+        </div>
+    </main>
+    <script>window.MERCHANT_DELIVERY_API="{% url 'merchant_deliveries_api' %}";</script>
+    <script src="{% static 'js/merchant-deliveries.js' %}?v=merchant-delivery-layout-1"></script>
+{% include "partials/back-to-top.html" %}
+</body>
+</html>

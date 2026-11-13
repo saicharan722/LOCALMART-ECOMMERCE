@@ -1,0 +1,170 @@
+[
+  {
+    "name": "Margherita Pizza",
+    "category": "Pizza",
+    "brand": "",
+    "price": 249,
+    "image": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=800",
+    "source": "restaurant-menu.js"
+  },
+  {
+    "name": "Farmhouse Pizza",
+    "category": "Pizza",
+    "brand": "",
+    "price": 349,
+    "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800",
+    "source": "restaurant-menu.js"
+  },
+  {
+    "name": "Chicken Tikka Pizza",
+    "category": "Pizza",
+    "brand": "",
+    "price": 399,
+    "image": "https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?w=800",
+    "source": "restaurant-menu.js"
+  },
+  {
+    "name": "Classic Veg Burger",
+    "category": "Burgers",
+    "brand": "",
+    "price": 149,
+    "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800",
+    "source": "restaurant-menu.js"
+  },
+  {
+    "name": "Cheese Burger",
+    "category": "Burgers",
+    "brand": "",
+    "price": 199,
+    "image": "https://images.unsplash.com/photo-1553979459-d2229ba7433a?w=800",
+    "source": "restaurant-menu.js"
+  },
+  {
+    "name": "Chicken Burger",
+    "category": "Burgers",
+    "brand": "",
+    "price": 229,
+    "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800",
+    "source": "restaurant-menu.js"
+  },
+  {
+    "name": "Masala Dosa",
+    "category": "South Indian",
+    "brand": "",
+    "price": 149,
+    "image": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=800",
+    "source": "restaurant-menu.js"
+  },
+  {
+    "name": "Plain Dosa",
+    "category": "South Indian",
+    "brand": "",
+    "price": 99,
+    "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=800",
+    "source": "restaurant-menu.js"
+  },
+  {
+    "name": "Idli Sambar",
+    "category": "South Indian",
+    "brand": "",
+    "price": 89,
+    "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=800",
+    "source": "restaurant-menu.js"
+  },
+  {
+    "name": "Masala Chai",
+    "category": "Tea",
+    "brand": "",
+    "price": 35,
+    "image": "https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=800",
+    "source": "restaurant-menu.js"
+  },
+  {
+    "name": "Ginger Tea",
+    "category": "Tea",
+    "brand": "",
+    "price": 40,
+    "image": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=800",
+    "source": "restaurant-menu.js"
+  },
+  {
+    "name": "Cardamom Tea",
+    "category": "Tea",
+    "brand": "",
+    "price": 40,
+    "image": "https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=800",
+    "source": "restaurant-menu.js"
+  },
+  {
+    "name": "Iced Lemon Tea",
+    "category": "Tea",
+    "brand": "",
+    "price": 89,
+    "image": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=800",
+    "source": "restaurant-menu.js"
+  },
+  {
+    "name": "Cappuccino",
+    "category": "Coffee",
+    "brand": "",
+    "price": 129,
+    "image": "https://images.unsplash.com/photo-1534778101976-62847782c213?w=800",
+    "source": "restaurant-menu.js"
+  },
+  {
+    "name": "Cafe Latte",
+    "category": "Coffee",
+    "brand": "",
+    "price": 139,
+    "image": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=800",
+    "source": "restaurant-menu.js"
+  },
+  {
+    "name": "Americano",
+    "category": "Coffee",
+    "brand": "",
+    "price": 109,
+    "image": "https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=800",
+    "source": "restaurant-menu.js"
+  },
+  {
+    "name": "Cold Coffee",
+    "category": "Coffee",
+    "brand": "",
+    "price": 149,
+    "image": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=800",
+    "source": "restaurant-menu.js"
+  },
+  {
+    "name": "Fresh Orange Juice",
+    "category": "Juices",
+    "brand": "",
+    "price": 99,
+    "image": "https://images.unsplash.com/photo-1613478223719-2ab802602423?w=800",
+    "source": "restaurant-menu.js"
+  },
+  {
+    "name": "Watermelon Juice",
+    "category": "Juices",
+    "brand": "",
+    "price": 89,
+    "image": "https://images.unsplash.com/photo-1525385133512-2f3bdd039054?w=800",
+    "source": "restaurant-menu.js"
+  },
+  {
+    "name": "Mango Juice",
+    "category": "Juices",
+    "brand": "",
+    "price": 109,
+    "image": "https://images.unsplash.com/photo-1546173159-315724a31696?w=800",
+    "source": "restaurant-menu.js"
+  },
+  {
+    "name": "Mixed Fruit Juice",
+    "category": "Juices",
+    "brand": "",
+    "price": 119,
+    "image": "https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=800",
+    "source": "restaurant-menu.js"
+  }
+]
